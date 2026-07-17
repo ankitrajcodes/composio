@@ -346,4 +346,4 @@ MIT License - Feel free to use for research and integration planning.
 
 ---
 
-**Built with ❤️ for Composio | Powered by Claude AI**
+Built with ❤️ for Composio
