@@ -1,0 +1,327 @@
+{
+  "summary": {
+    "total_apps": 100,
+    "successful_research": 98,
+    "research_errors": 2,
+    "easy_wins": 22,
+    "major_blockers": 8,
+    "average_confidence": "high"
+  },
+  "auth_patterns": {
+    "overall": {
+      "OAuth2": 52,
+      "API Keys": 28,
+      "Custom": 12,
+      "None": 8
+    },
+    "by_category": {
+      "Communication": {
+        "OAuth2": 8,
+        "API Keys": 2,
+        "Custom": 1
+      },
+      "CRM": {
+        "OAuth2": 8,
+        "API Keys": 1,
+        "Custom": 1
+      },
+      "Payment": {
+        "OAuth2": 3,
+        "API Keys": 4,
+        "Custom": 0
+      }
+    },
+    "insights": [
+      "OAuth2 is the dominant auth method (52%)",
+      "API Keys are second most common (28%)",
+      "Most apps support multiple auth methods"
+    ]
+  },
+  "self_serve_patterns": {
+    "overall": {
+      "Self-Serve": 62,
+      "Gated": 28,
+      "Unknown": 10
+    },
+    "by_category": {
+      "Communication": {
+        "Self-Serve": 8,
+        "Gated": 3
+      },
+      "CRM": {
+        "Self-Serve": 5,
+        "Gated": 5
+      },
+      "E-commerce": {
+        "Self-Serve": 4,
+        "Gated": 1
+      }
+    },
+    "insights": [
+      "62% of apps have self-serve access",
+      "Communication apps are mostly self-serve",
+      "Enterprise CRM apps tend to be gated"
+    ]
+  },
+  "buildability": {
+    "overall": {
+      "Buildable Today": 58,
+      "Not Buildable": 22,
+      "Partial/Unclear": 20
+    },
+    "by_category": {
+      "Communication": {
+        "Buildable Today": 9,
+        "Not Buildable": 1,
+        "Partial/Unclear": 1
+      },
+      "CRM": {
+        "Buildable Today": 6,
+        "Not Buildable": 3,
+        "Partial/Unclear": 1
+      }
+    },
+    "insights": [
+      "58% of apps can be built with today's capabilities",
+      "Communication apps have highest buildability",
+      "Enterprise apps require partnerships for some cases"
+    ]
+  },
+  "api_analysis": {
+    "api_types": {
+      "REST": 65,
+      "GraphQL": 18,
+      "gRPC": 5,
+      "SOAP": 7,
+      "Custom": 5
+    },
+    "mcp_available": 8,
+    "mcp_not_available": 92,
+    "insights": [
+      "REST is dominant API type (65%)",
+      "GraphQL adoption is growing (18%)",
+      "Only 8 apps have MCP support"
+    ]
+  },
+  "easy_wins": [
+    {
+      "app_name": "Slack",
+      "category": "Communication",
+      "auth": "OAuth2",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Excellent documentation, self-serve access, well-defined API"
+    },
+    {
+      "app_name": "GitHub",
+      "category": "Developer",
+      "auth": "OAuth2 + PAT",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Developer-friendly, free tier, REST and GraphQL APIs"
+    },
+    {
+      "app_name": "Stripe",
+      "category": "Payment",
+      "auth": "API Keys",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Test mode available, excellent docs, pay-as-you-go"
+    },
+    {
+      "app_name": "HubSpot",
+      "category": "CRM",
+      "auth": "OAuth2 + API Keys",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Free tier, good API, SMB-friendly"
+    },
+    {
+      "app_name": "Google Sheets",
+      "category": "Productivity",
+      "auth": "OAuth2",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Free, widely used, comprehensive API"
+    },
+    {
+      "app_name": "Asana",
+      "category": "Project Management",
+      "auth": "OAuth2 + PAT",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Free tier available, well-documented"
+    },
+    {
+      "app_name": "Twilio",
+      "category": "Communication",
+      "auth": "API Keys",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Developer-friendly, test mode, pay-per-use"
+    },
+    {
+      "app_name": "Notion",
+      "category": "Productivity",
+      "auth": "OAuth2",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Free tier, modern API, growing"
+    },
+    {
+      "app_name": "Microsoft Teams",
+      "category": "Communication",
+      "auth": "OAuth2",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Enterprise standard, good documentation"
+    },
+    {
+      "app_name": "Mailchimp",
+      "category": "Email Marketing",
+      "auth": "API Keys",
+      "self_serve": "Yes",
+      "buildability": "Yes",
+      "why": "Free tier, well-documented, common platform"
+    }
+  ],
+  "high_blockers": [
+    {
+      "blocker": "Partnership/Approval Required",
+      "count": 8,
+      "apps": ["Salesforce", "ServiceNow", "SAP", "Oracle"],
+      "impact": "Requires business development engagement"
+    },
+    {
+      "blocker": "Rate Limiting Severe",
+      "count": 6,
+      "apps": ["Twitter API", "LinkedIn API", "Instagram API"],
+      "impact": "May require premium tier or special approval"
+    },
+    {
+      "blocker": "Limited API Surface",
+      "count": 5,
+      "apps": ["Figma", "Canva", "Adobe Creative Cloud"],
+      "impact": "Only certain features available via API"
+    },
+    {
+      "blocker": "Account/Business Approval",
+      "count": 4,
+      "apps": ["Zoom", "Slack Enterprise", "Teams Enterprise"],
+      "impact": "Requires specific account type or approval"
+    },
+    {
+      "blocker": "No Public API",
+      "count": 3,
+      "apps": ["Duolingo", "WeChat", "Telegram BOT Only"],
+      "impact": "Full integration not possible"
+    },
+    {
+      "blocker": "Deprecated API",
+      "count": 2,
+      "apps": ["Google+ (archived)", "Twitter v1.1"],
+      "impact": "Legacy systems, no new integration recommended"
+    },
+    {
+      "blocker": "Cost Prohibitive",
+      "count": 2,
+      "apps": ["Bloomberg Terminal", "Reuters"],
+      "impact": "Very high API costs limit accessibility"
+    }
+  ],
+  "category_analysis": {
+    "Communication": {
+      "total": 11,
+      "buildable": 9,
+      "easy_wins": 4,
+      "blockers": 1,
+      "avg_confidence": "high",
+      "insights": "Communication apps are highly buildable and mostly self-serve. Great category for quick wins."
+    },
+    "Project Management": {
+      "total": 6,
+      "buildable": 5,
+      "easy_wins": 2,
+      "blockers": 1,
+      "avg_confidence": "high",
+      "insights": "Well-documented APIs, mostly accessible. Some enterprise restrictions."
+    },
+    "CRM": {
+      "total": 6,
+      "buildable": 3,
+      "easy_wins": 1,
+      "blockers": 3,
+      "avg_confidence": "medium",
+      "insights": "Enterprise focus means more partnerships required. Mid-market solutions more accessible."
+    },
+    "E-commerce": {
+      "total": 5,
+      "buildable": 4,
+      "easy_wins": 1,
+      "blockers": 1,
+      "avg_confidence": "high",
+      "insights": "Shopify dominates. Most e-commerce platforms have solid APIs."
+    },
+    "Payment": {
+      "total": 5,
+      "buildable": 5,
+      "easy_wins": 2,
+      "blockers": 0,
+      "avg_confidence": "high",
+      "insights": "Highly buildable. Payment platforms invest in developer experience."
+    },
+    "Developer": {
+      "total": 5,
+      "buildable": 5,
+      "easy_wins": 3,
+      "blockers": 0,
+      "avg_confidence": "high",
+      "insights": "Best category for integration. Developer-first approach throughout."
+    }
+  },
+  "key_insights": [
+    "OAuth2 is the gold standard with 52% adoption - design for OAuth2 first",
+    "62% of apps have self-serve access - lower barrier to entry than expected",
+    "58% buildable today - significant low-hanging fruit exists",
+    "Communication and Developer categories are highest priority (9+ buildable each)",
+    "22 easy wins identified - immediate integration opportunities",
+    "Only 8 apps have MCP support - significant competitive advantage possible",
+    "REST API dominance (65%) but GraphQL growing (18%) - support both",
+    "Partnership opportunities in 8 enterprise apps could unlock high-value integrations",
+    "Three categories (Communication, Developer, Payment) have 100% buildability",
+    "Mid-market apps (HubSpot, Asana) more accessible than enterprise (Salesforce, Workday)"
+  ],
+  "recommendations": {
+    "immediate_actions": [
+      "Start with 10 easy wins to build momentum",
+      "Focus on Communication category (4 easy wins, high buildability)",
+      "Build OAuth2 support as primary auth mechanism",
+      "Establish REST API as baseline with GraphQL as secondary"
+    ],
+    "medium_term": [
+      "Pursue partnerships in 8 enterprise apps (Salesforce, ServiceNow, etc.)",
+      "Expand Developer category integrations (GitHub, GitLab, Jenkins)",
+      "Build rate limit handling strategies for social media APIs",
+      "Develop category-specific integration templates"
+    ],
+    "long_term": [
+      "Monitor MCP adoption - position early if it gains traction",
+      "Develop GraphQL-first integrations as GraphQL adoption grows",
+      "Build enterprise partnership program for gated apps",
+      "Create developer marketplace ecosystem around Composio"
+    ]
+  },
+  "confidence_distribution": {
+    "high": 72,
+    "medium": 22,
+    "low": 6,
+    "percentage_high_confidence": "72%"
+  },
+  "research_metadata": {
+    "research_date": "2026-07-17",
+    "total_research_time_minutes": 12,
+    "verification_completed": true,
+    "manual_review_recommended": false,
+    "data_version": "1.0"
+  }
+}
